@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <section>
+            @using (Html.BeginForm("PostUsingPar", "Home"))
+            {
+                <input type="text" name="firstname" /><br />
+                <input type="text" name="lastname" /> <br />
+                <input type="submit" name="Clickme" />
+            }
+        </section>
+        <br />
+        <section>
+            @using (Html.BeginForm("PostUsingRequest", "Home"))
+            {
+
+                <h1>Request</h1>
+                <input type="text" name="firstname" /><br />
+                <input type="text" name="lastname" /> <br />
+                <input type="submit" name="Clickme" />
+            }
+        </section>
+    </div>
+</body>
+</html>
+
